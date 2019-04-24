@@ -7,15 +7,32 @@ um único parâmetro como argumento. Essa função deve retornar `true` se o
 equivalente booleano para o valor passado no argumento for `true`, ou `false`
 para o contrário.
 */
-?
+        var isTruthy = function(params) {
+            return params ? true: false;
+        };
 
 // Invoque a função criada acima, passando todos os tipos de valores `falsy`.
-?
+isTruthy(0); //false
+isTruthy(false); //false
+isTruthy(''); //false
+isTruthy(""); //false
+isTruthy(null); //false
+isTruthy(undefined); //false
+isTruthy(-0); //false
 
 /*
 Invoque a função criada acima passando como parâmetro 10 valores `truthy`.
 */
-?
+isTruthy('lucas'); //true
+isTruthy(1) ); //true
+isTruthy(true)); //true
+isTruthy(!false)); //true
+isTruthy(!!true)); //true
+isTruthy('o'); //true
+isTruthy('0'); //true
+isTruthy(123); //true
+isTruthy('Ninja'); //true
+isTruthy(11.22); //true
 
 /*
 Declare uma variável chamada `carro`, atribuindo à ela um objeto com as
@@ -46,7 +63,6 @@ Crie um método chamado `obterCor`, que retorne a cor do carro.
 Crie um método chamado `obterModelo` que retorne o modelo do carro.
 */
 ?
-
 /*
 Crie um método chamado `obterMarca` que retorne a marca do carro.
 */
